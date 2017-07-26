@@ -1,4 +1,4 @@
-# SNS ios Example
+# SNS IOS Example
 
 This is an example of using AWS SNS service to register an IOS app and publish to an endpoint. Prior to using this app, you should have already registered your app on Apple developer portal and have required certificate (APN ssl) ready. You should also have device token ready for the test device on which your app is running.
 
