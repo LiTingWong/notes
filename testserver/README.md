@@ -4,7 +4,9 @@ This is an example of using AWS sns service to register an IOS app and publish t
 
 if you are unsure of how to set up your application, check the wiki.
 
-The project is a modification to the git repository https://github.com/markcallen/snssqs which use sns to publish to sqs endpoint.
+The project is a modification of the marcallen's git repository [snssqs](https://github.com/markcallen/snssqs) which use sns to publish to sqs endpoint instead of application endpoint.
+
+Check [here](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#publish-property) for the complete AWS sdk JavaScript doc. 
 
 ## Prep
 Log into your AWS console and create a new user in IAM. Make sure you save the users credentials.
