@@ -54,7 +54,7 @@ function createTopic(cb) {
 
 function createPlatformEndpoint(cb) {
   sns.createPlatformEndpoint({
-    PlatformApplicationArn: config.PlatformApplicationArn, //get it from console
+    PlatformApplicationArn: config.PlatformApplicationArn,
     Token: "<device token>" //device token for the app on the test device
   }, function(err, data) {
     if (err) {
@@ -69,8 +69,8 @@ function createPlatformEndpoint(cb) {
 function snsSubscribe(cb) {
   sns.subscribe({
     'TopicArn': config.TopicArn,
-  'Protocol': 'application',
-  'Endpoint': config.EndpointArn
+    'Protocol': 'application',
+    'Endpoint': config.EndpointArn
   }, function (err, result) {
 
     if (err !== null) {
