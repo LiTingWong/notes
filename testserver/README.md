@@ -1,9 +1,13 @@
 # SNS ios Example
 
-This is an example of using AWS sns service to register an IOS app and publish to an endpoint. Prior to using this app, you should have alreddy registered your app on Apple developer portal and have required certificate (APN ssl) ready. You should also have device token ready for the test device on which your app is running.
+This is an example of using AWS sns service to register an IOS app and publish to an endpoint. Prior to using this app, you should have already registered your app on Apple developer portal and have required certificate (APN ssl) ready. You should also have device token ready for the test device on which your app is running.
+
+if you are unsure of how to set up your application, check the wiki.
+
+The project is a modification to the git repository https://github.com/markcallen/snssqs which use sns to publish to sqs endpoint.
 
 ## Prep
-Log into your AWS console and create a new user in IAM. Make sure you save the users credientials.
+Log into your AWS console and create a new user in IAM. Make sure you save the users credentials.
 Attach the User Policies for Amazon SQS Full Access and Amazon SNS Full Access.  
 
 Create ~/.aws/credentials
