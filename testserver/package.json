@@ -1,0 +1,15 @@
+{
+  "name": "snsios-test-server",
+  "version": "0.1.0",
+  "main": "app",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "async": "0.9.x",
+    "aws-sdk": "2.1.x",
+    "util": "0.10.x"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
