@@ -24,9 +24,9 @@ aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
 Alternatively, you can add the credentials in code by modifying the AWS config in `create.js` and `publish.js`
 ```JavaScript
 var sns = new AWS.SNS({
-  'region': 'us-west-2',
-  accessKeyId: '<YOUR_ACCESS_KEY_ID>',
-  secretAccessKey: '<YOUR_SECRET_ACCESS_KEY>',
+  "region": "us-west-2",
+  "accessKeyId": '<YOUR_ACCESS_KEY_ID>',
+  "secretAccessKey": '<YOUR_SECRET_ACCESS_KEY>',
 });
 ```
 
@@ -43,8 +43,7 @@ var params = {
   Attributes: {
       //fill in the private key here
       PlatformCredential: `-----BEGIN PRIVATE KEY-----
------END PRIVATE KEY-----
-`,
+-----END PRIVATE KEY-----`,
       //fill in certificate here
       PlatformPrincipal: `-----BEGIN CERTIFICATE-----
 -----END CERTIFICATE-----`,
