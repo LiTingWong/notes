@@ -21,6 +21,15 @@ aws_access_key_id = <YOUR_ACCESS_KEY_ID>
 aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
 ```
 
+Alternatively, you can add the credentials in code by modifying the AWS config in `create.js` and `publish.js`
+```JavaScript
+var sns = new AWS.SNS({
+  'region': 'us-west-2',
+  accessKeyId: '<YOUR_ACCESS_KEY_ID>',
+  secretAccessKey: '<YOUR_SECRET_ACCESS_KEY>',
+});
+```
+
 ### Get the APN certificate
 Log into your Apple Developer Portal and download the APN certificate for your app.  
 Double click on the certificate to load it in keychain.  
